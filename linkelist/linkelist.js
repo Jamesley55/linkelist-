@@ -32,21 +32,41 @@ class Linkelist
         this.size++;
         
     }
-    // this function take the head of the linkelist
+    showlinkeList(head)
+    {
+        let currentIndex = head; 
+        while(currentIndex)
+        {
+            console.log(currentIndex);
+            currentIndex = currentIndex.next; 
+            
+        }
+    }
+    // this function take the head of the linkelist 
     reverseLinkelist(head)
     {
         let node = head ; 
-        let previous = null, currentIndex; 
+        let previous, currentIndex; 
 
         while(node)
         {
             currentIndex = node.next;
+            console.log(" current index"); console.log(currentIndex);
             node.next= previous; 
+            console.log(" current console.next " ); 
+            console.log(node.next);
             previous = node; 
+            console.log( " current previous");
+            console.log(previous);
             node = currentIndex;
+            console.log( " current node" +node);
 
         }
+        // return previous cause previous becomes the head of the linkelist 
         return previous; 
+
+        // time complexity of big o(n)
+        // space complexity of big o(1)
 
     }
     insertAt(element, location)
@@ -125,5 +145,7 @@ var lk = " ta mere";
 var mk = 5; 
 link.addElement(lk);
 link.addElement(mk); 
+
+
 link.sizOfListe();
-link.reverserLinkeliste(lk);
+link.showlinkeList(link.head);
