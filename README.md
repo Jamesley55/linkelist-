@@ -1,2 +1,2 @@
 # linkelist-
-implementation of a linkelist 
+implementation of basic algorithm  for interview 
