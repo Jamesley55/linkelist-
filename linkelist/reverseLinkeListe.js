@@ -14,10 +14,13 @@ class Linkelist{
     this.size = 0; 
     }
 
-    reverseLinkelist()
+    
+}
+
+function reverseLinkelist(head )
     {
         let curent,  presedent, node  ; 
-        node = this.start; 
+        node = head;  
         presedent = null;  
 
         while(index)
@@ -26,7 +29,8 @@ class Linkelist{
              node.next = presedent; 
              presedent = node; 
              node = current; 
-
         }
+        return presedent; 
     }
-}
+
+    

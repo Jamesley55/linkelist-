@@ -1,4 +1,4 @@
-class Node
+ class Node
 {
 
     constructor(data)
@@ -10,7 +10,7 @@ class Node
 }
 
 
-class queue
+export default class Queue
 {
     constructor()
     {

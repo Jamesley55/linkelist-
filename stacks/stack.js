@@ -1,4 +1,4 @@
-class stack 
+export default class Stack 
 {
     constructor()
     {
